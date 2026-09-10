@@ -315,10 +315,6 @@ The repository includes database diagrams in the `docs/` directory.
 
 ![Final database schema](docs/final_database_schema.png)
 
-### Migration pipeline
-
-![Migration pipeline](docs/migration_pipeline.png)
-
 ## Validation
 
 The ETL process performs several validation steps before and after loading the final table.
