@@ -142,8 +142,7 @@ DroneSoundsDB/
 │
 ├── docs/
 │   ├── original_database_schema.png
-│   ├── final_database_schema.png
-│   └── migration_pipeline.png
+│   └── final_database_schema.png
 │
 ├── README.md
 ├── .gitignore
@@ -193,18 +192,6 @@ sqlcmd -S YOUR_SERVER_NAME -E -C -b -d DroneSoundsDB -i .\run\04_run_staging.sql
 sqlcmd -S YOUR_SERVER_NAME -E -C -b -d DroneSoundsDB -i .\run\05_run_etl.sql
 sqlcmd -S YOUR_SERVER_NAME -E -C -b -d DroneSoundsDB -i .\run\06_finalize_schema.sql
 sqlcmd -S YOUR_SERVER_NAME -E -C -b -d DroneSoundsDB -i .\run\07_run_maintenance.sql
-```
-
-Example:
-
-```powershell
-sqlcmd -S DESKTOP-U1AU75R -E -C -b -i .\run\01_run_schema.sql
-sqlcmd -S DESKTOP-U1AU75R -E -C -b -d DroneSoundsDB -i .\run\02_run_seeds.sql
-sqlcmd -S DESKTOP-U1AU75R -E -C -b -d DroneSoundsDB -i .\run\03_run_raw.sql
-sqlcmd -S DESKTOP-U1AU75R -E -C -b -d DroneSoundsDB -i .\run\04_run_staging.sql
-sqlcmd -S DESKTOP-U1AU75R -E -C -b -d DroneSoundsDB -i .\run\05_run_etl.sql
-sqlcmd -S DESKTOP-U1AU75R -E -C -b -d DroneSoundsDB -i .\run\06_finalize_schema.sql
-sqlcmd -S DESKTOP-U1AU75R -E -C -b -d DroneSoundsDB -i .\run\07_run_maintenance.sql
 ```
 
 The `-b` option stops execution when an SQL error occurs.
