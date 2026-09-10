@@ -16,6 +16,7 @@ The database build process follows a staged pipeline:
 
 ```text
 RAW -> STAGING -> ETL -> FINAL
+```
 
 ### RAW
 
